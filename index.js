@@ -20,7 +20,6 @@ Airplane.prototype.land = function () {
 };
 
 
-
 /*
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -41,20 +40,20 @@ Airplane.prototype.land = function () {
 */
 
 function Person(name, age) {
-    this.name = name;
-    this.age = age;
-    this.stomach = [];
+  this.name = name;
+  this.age = age;
+  this.stomach = [];
 }
 Person.prototype.eat = function () {
-    this.stomach = [];
-    this.eat()
-   
+  this.stomach = [];
+
+
 };
 Person.prototype.poop = function () {
-    this.stomach = [];
-  
+  this.stomach = [];
+
 };
-}
+
 
 /*
   TASK 2
@@ -70,9 +69,23 @@ Person.prototype.poop = function () {
         + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
 */
 
-function Car() {
-
+function Car(model, milesPerGallon) {
+  this.model = model;
+  this.milesPerGallon = milesPerGallon;
+  this.tank = 0;
+  this.odometer = 0;
+  this.stomach = [];
 }
+Car.prototype.fill = function (gallons) {
+  ++this.tank;
+
+};
+Car.prototype.drive = function (distance) {
+  ++this.odometer;
+  --this.tank;
+
+};
+
 
 /*
   TASK 3
