@@ -46,12 +46,9 @@ function Person(name, age) {
 }
 Person.prototype.eat = function () {
   this.stomach = [];
-
-
 };
 Person.prototype.poop = function () {
   this.stomach = [];
-
 };
 
 
@@ -83,7 +80,6 @@ Car.prototype.fill = function (gallons) {
 Car.prototype.drive = function (distance) {
   ++this.odometer;
   --this.tank;
-
 };
 
 
